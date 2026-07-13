@@ -1,0 +1,5 @@
+stage,entering,flagged,excluded,retained,reason
+Input,5000,0,0,5000,Synthetic demonstration records read without modification
+Validation,5000,34,0,5000,Quality findings recorded; general analysis retains rows
+Temporal and geographic analysis,5000,0,0,5000,Validated rows included
+Reporting-delay analysis,5000,34,34,4966,Negative calendar order excluded only from delay statistics

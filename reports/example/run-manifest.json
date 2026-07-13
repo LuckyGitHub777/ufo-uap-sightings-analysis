@@ -1,0 +1,77 @@
+{
+  "blocking_errors": 0,
+  "dataset_label": "Synthetic demonstration",
+  "dataset_type": "synthetic",
+  "external_data_used": false,
+  "input_file": "input/synthetic-reports.csv",
+  "input_rows": 5000,
+  "input_sha256": "773e3e9aebf0eb95a2c77cd3febf3bd89cc2da27ce71c0e0bd1500caf971293e",
+  "methodology_version": "1.0",
+  "outputs": [
+    {
+      "path": "analysis-summary.md",
+      "sha256": "cc12880b51d46226226fbfe8bf805565aae3aab9164cadf6fbc90fcf8e24e46c",
+      "size_bytes": 1720
+    },
+    {
+      "path": "data-quality-report.json",
+      "sha256": "996dd12181129e34dcb2f8d7d4e7653671400f0dbd8f6f96b243ea473489c247",
+      "size_bytes": 9599
+    },
+    {
+      "path": "descriptive-statistics.json",
+      "sha256": "f5ad437ebad2fdc91dcc86b83b92c17032da4181e09fe91e54400eb30175e223",
+      "size_bytes": 2623
+    },
+    {
+      "path": "figures/reports-by-month.svg",
+      "sha256": "46f25bb5b7cd5368d6a5766efdc69aef0467bbb4fb83e328ab26b8adc27444ba",
+      "size_bytes": 4749
+    },
+    {
+      "path": "figures/reports-by-shape.svg",
+      "sha256": "b35c829dbfae03cd8a52eec9d694199fccb4004333f420a7aebdd59b4f1f35f7",
+      "size_bytes": 3683
+    },
+    {
+      "path": "figures/reports-by-state.svg",
+      "sha256": "00da6d24297bba499deab98696f4abe5ae4fdec418e0a8dc25f59e8cff132141",
+      "size_bytes": 4471
+    },
+    {
+      "path": "figures/reports-by-time-of-day.svg",
+      "sha256": "d054a1f514ec3f63a7b94ab3f674448ca30b224d62aab4107feb4da71078a4c3",
+      "size_bytes": 2192
+    },
+    {
+      "path": "figures/reports-by-year.svg",
+      "sha256": "39adb7c9c9959c182f148eaaecf833aa195e79d122fac595767425bfda87d7d2",
+      "size_bytes": 2460
+    },
+    {
+      "path": "figures/sample-flow.svg",
+      "sha256": "99f7e823c8432d7fd548460013223200ca963e3f5801dea85b073b661ea7165b",
+      "size_bytes": 2565
+    },
+    {
+      "path": "input/synthetic-reports.csv",
+      "sha256": "773e3e9aebf0eb95a2c77cd3febf3bd89cc2da27ce71c0e0bd1500caf971293e",
+      "size_bytes": 246187
+    },
+    {
+      "path": "sample-flow.csv",
+      "sha256": "267fbcb0df73adc45f6734d59b4b396facd561ec1eacf24e84b0736cf0c0aff5",
+      "size_bytes": 386
+    },
+    {
+      "path": "statistical-results.csv",
+      "sha256": "08d07276c3e6f74006738f7bec5dbd5eb83a360d7a666bf5236144fd4069d5f7",
+      "size_bytes": 892
+    }
+  ],
+  "project_version": "1.0.0",
+  "python_runtime": "3.13.5",
+  "source_description": "Deterministic synthetic sighting reports",
+  "synthetic_seed": 20241205,
+  "warnings": 34
+}

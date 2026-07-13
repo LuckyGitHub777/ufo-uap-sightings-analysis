@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.tox/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.env
+.DS_Store
+reports/demo/
+reports/my-analysis/
+smoke-output/
+smoke-template.csv
+smoke-template-README.md
+*.log
+.private-release-denylist.txt
+# Never commit user-supplied or third-party raw datasets.
+data/raw/
+data/private/
+data/scraped/

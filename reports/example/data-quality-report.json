@@ -1,0 +1,232 @@
+{
+  "blocking_error_count": 0,
+  "blocking_error_summary": {},
+  "blocking_errors": [],
+  "columns": [
+    "report_id",
+    "occurred_at",
+    "reported_date",
+    "state",
+    "shape"
+  ],
+  "date_coverage": {
+    "end": "2024-12-31",
+    "start": "2020-01-01"
+  },
+  "material_warning_count": 34,
+  "observed_months": 60,
+  "row_count": 5000,
+  "source": "synthetic-reports.csv",
+  "source_sha256": "773e3e9aebf0eb95a2c77cd3febf3bd89cc2da27ce71c0e0bd1500caf971293e",
+  "status": "passed",
+  "warning_count": 34,
+  "warning_summary": {
+    "negative_calendar_order": 34
+  },
+  "warnings": [
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 2
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 3
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 4
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 5
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 6
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 7
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 8
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 9
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 10
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 11
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 12
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 13
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 14
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 15
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 16
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 17
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 18
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 19
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 20
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 21
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 22
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 23
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 24
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 25
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 26
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 27
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 28
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 29
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 30
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 31
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 32
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 33
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 34
+    },
+    {
+      "code": "negative_calendar_order",
+      "field": "reported_date",
+      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "row": 35
+    }
+  ]
+}
