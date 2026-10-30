@@ -1,6 +1,8 @@
 # UFO/UAP Sightings Analysis Summary
 
-## Scope
+> Start here. This report explains the most important results before presenting detailed statistics.
+
+## At a Glance
 
 - Dataset: **Synthetic demonstration**
 - Records analyzed: **5,000**
@@ -9,21 +11,27 @@
 - Blocking validation errors: **0**
 - Validation warnings: **34**
 
-## Calendar Coverage
+## What the Results Mean
+
+- The two monthly-count periods do not show strong evidence of a difference under the no-difference resampling model.
+- The simple monthly linear pattern is weak and downward. Its R² is 0.0583, so the fitted line is only a descriptive summary of the monthly variation.
+- These generated results demonstrate the software and are not findings about real-world UFO/UAP activity.
+
+## Coverage and Data Quality
 
 - Monthly sequence: **2020-01 through 2024-12**
 - Calendar months represented: **60**
 - Months containing reports: **60**
 - Zero-report months retained in the time series: **0**
 
-## Descriptive Results
+## Reporting and Record Quality
 
 - Same-calendar-day reports: **2,600**
 - Long reporting delays over 29 days: **200**
-- Negative calendar-order rows excluded only from delay statistics: **34**
+- Reports excluded only from reporting-delay calculations because the report date came before the sighting date: **34**
 - Median valid reporting delay: **0.0 days**
 
-## Statistical Results
+## Detailed Statistics
 
 ### Monthly Count Statistical Demonstration
 
@@ -42,11 +50,18 @@
 - Estimated slope: **-0.1283 reports per month**
 - R²: **0.0583**
 
-## Interpretation Boundary
+## Statistical Glossary
+
+- **Permutation p-value:** how unusual the observed period difference would be under repeated random reassignment.
+- **Pearson correlation:** the direction and strength of a simple linear pattern over time.
+- **Slope:** the estimated change in reports per calendar month.
+- **R²:** the proportion of monthly variation described by the simple linear trend.
+
+## What This Does Not Establish
 
 The demonstration is designed to show the pipeline and its controls. Its generated findings are not real-world UFO/UAP claims.
 
-## Output Inventory
+## Files Created
 
 - `data-quality-report.json`
 - `descriptive-statistics.json`

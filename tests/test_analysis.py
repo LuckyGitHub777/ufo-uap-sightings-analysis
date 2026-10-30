@@ -120,6 +120,53 @@ class AnalysisTests(unittest.TestCase):
             self.assertNotIn("Synthetic demo", public_text)
             self.assertNotIn("synthetic result", public_text)
 
+    def test_sample_flow_uses_plain_language(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = write_csv(root / "reports.csv")
+            validation = validate_reports(source)
+            analysis = analyze_rows(load_rows(source))
+            files = write_outputs(
+                root / "out",
+                source_path=source,
+                validation=validation,
+                analysis=analysis,
+                context=AnalysisContext.synthetic_demo(),
+                seed=DEFAULT_SEED,
+            )
+            text = files["sample_flow"].read_text(encoding="utf-8")
+            self.assertIn("How the Demo Records Were Used", text)
+            self.assertIn("excluded from this calculation only", text)
+            self.assertNotIn("calendar-order flags excluded", text)
+            self.assertNotIn("\\n", text)
+            import xml.etree.ElementTree as ET
+            ET.parse(files["sample_flow"])
+
+    def test_summary_includes_plain_language_interpretation_and_glossary(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = write_csv(root / "reports.csv")
+            validation = validate_reports(source)
+            analysis = analyze_rows(load_rows(source))
+            files = write_outputs(
+                root / "out",
+                source_path=source,
+                validation=validation,
+                analysis=analysis,
+                context=AnalysisContext.synthetic_demo(),
+                seed=DEFAULT_SEED,
+            )
+            text = files["summary"].read_text(encoding="utf-8")
+            self.assertIn("## What the Results Mean", text)
+            self.assertIn("## Detailed Statistics", text)
+            self.assertIn("## Statistical Glossary", text)
+            self.assertIn("## What This Does Not Establish", text)
+            self.assertIn("## Files Created", text)
+            self.assertIn("not findings about real-world UFO/UAP activity", text)
+            self.assertNotIn("\\n- ", text)
+            self.assertIn("\n- The simple monthly linear pattern", text)
+            self.assertLess(text.index("## What the Results Mean"), text.index("## Detailed Statistics"))
+
     def test_machine_outputs_are_deterministic(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

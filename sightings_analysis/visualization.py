@@ -36,10 +36,10 @@ def _bar_chart(
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         f'<title id="title">{escape(title)}</title>',
         f'<desc id="desc">{escape(description)}</desc>',
-        '<rect width="100%" height="100%" fill="#ffffff"/>',
-        f'<text x="{margin_left}" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#16202a">{escape(title)}</text>',
-        f'<text x="{margin_left}" y="78" font-family="Arial, sans-serif" font-size="16" fill="#536171">{escape(subtitle)}</text>',
-        f'<line x1="{margin_left}" y1="{margin_top + chart_height}" x2="{margin_left + chart_width}" y2="{margin_top + chart_height}" stroke="#98a2ad"/>',
+        '<rect width="100%" height="100%" fill="#fbfcfd"/>',
+        f'<text x="{margin_left}" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">{escape(title)}</text>',
+        f'<text x="{margin_left}" y="78" font-family="Arial, sans-serif" font-size="16" fill="#52636d">{escape(subtitle)}</text>',
+        f'<line x1="{margin_left}" y1="{margin_top + chart_height}" x2="{margin_left + chart_width}" y2="{margin_top + chart_height}" stroke="#c6d0d6"/>',
     ]
 
     for index, (label, value) in enumerate(zip(labels, values, strict=True)):
@@ -47,17 +47,17 @@ def _bar_chart(
         bar_height = 0 if maximum == 0 else chart_height * value / maximum
         y = margin_top + chart_height - bar_height
         elements.append(
-            f'<rect x="{x:.2f}" y="{y:.2f}" width="{bar_width:.2f}" height="{bar_height:.2f}" rx="3" fill="#356a86"/>'
+            f'<rect x="{x:.2f}" y="{y:.2f}" width="{bar_width:.2f}" height="{bar_height:.2f}" rx="3" fill="#145f73"/>'
         )
         elements.append(
-            f'<text x="{x + bar_width / 2:.2f}" y="{max(y - 8, margin_top + 12):.2f}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#16202a">{value}</text>'
+            f'<text x="{x + bar_width / 2:.2f}" y="{max(y - 8, margin_top + 12):.2f}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">{value}</text>'
         )
         elements.append(
-            f'<text x="{x + bar_width / 2:.2f}" y="{margin_top + chart_height + 28}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">{escape(label)}</text>'
+            f'<text x="{x + bar_width / 2:.2f}" y="{margin_top + chart_height + 28}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">{escape(label)}</text>'
         )
 
     elements.append(
-        f'<text x="{margin_left}" y="{height - 24}" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">{escape(footer)}</text>'
+        f'<text x="{margin_left}" y="{height - 24}" font-family="Arial, sans-serif" font-size="13" fill="#667780">{escape(footer)}</text>'
     )
     elements.append("</svg>")
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -89,22 +89,22 @@ def _horizontal_bar_chart(
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         f'<title id="title">{escape(title)}</title>',
         f'<desc id="desc">{escape(description)}</desc>',
-        '<rect width="100%" height="100%" fill="#ffffff"/>',
-        f'<text x="70" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#16202a">{escape(title)}</text>',
-        f'<text x="70" y="78" font-family="Arial, sans-serif" font-size="16" fill="#536171">{escape(subtitle)}</text>',
+        '<rect width="100%" height="100%" fill="#fbfcfd"/>',
+        f'<text x="70" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">{escape(title)}</text>',
+        f'<text x="70" y="78" font-family="Arial, sans-serif" font-size="16" fill="#52636d">{escape(subtitle)}</text>',
     ]
     for index, (label, value) in enumerate(zip(labels, values, strict=True)):
         y = margin_top + index * row_height
         length = 0 if maximum == 0 else chart_width * value / maximum
         elements.extend(
             [
-                f'<text x="{margin_left - 14}" y="{y + 20}" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">{escape(label)}</text>',
-                f'<rect x="{margin_left}" y="{y + 5}" width="{length:.2f}" height="22" rx="3" fill="#356a86"/>',
-                f'<text x="{min(margin_left + length + 8, width - 50):.2f}" y="{y + 21}" font-family="Arial, sans-serif" font-size="12" fill="#16202a">{value}</text>',
+                f'<text x="{margin_left - 14}" y="{y + 20}" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">{escape(label)}</text>',
+                f'<rect x="{margin_left}" y="{y + 5}" width="{length:.2f}" height="22" rx="3" fill="#145f73"/>',
+                f'<text x="{min(margin_left + length + 8, width - 50):.2f}" y="{y + 21}" font-family="Arial, sans-serif" font-size="12" fill="#10242d">{value}</text>',
             ]
         )
     elements.append(
-        f'<text x="70" y="{height - 22}" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">{escape(footer)}</text>'
+        f'<text x="70" y="{height - 22}" font-family="Arial, sans-serif" font-size="13" fill="#667780">{escape(footer)}</text>'
     )
     elements.append("</svg>")
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -120,41 +120,68 @@ def _sample_flow_chart(
     flagged_rows: int,
     context: AnalysisContext,
 ) -> Path:
-    width, height = 1000, 400
+    width, height = 1000, 440
+    is_demo = context.dataset_type == "synthetic"
+    chart_title = (
+        "How the Demo Records Were Used"
+        if is_demo
+        else "How the Records Were Used"
+    )
+    first_note = (
+        "Synthetic demonstration reports"
+        if is_demo
+        else "User-supplied reports"
+    )
     boxes = [
-        (70, "Input", input_rows, f"All {context.short_label} reports"),
-        (370, "General analysis", input_rows, "Rows retained"),
+        (55, "Reports read", input_rows, [first_note]),
+        (365, "General analysis", input_rows, ["All reports retained"]),
         (
-            670,
-            "Delay analysis",
+            675,
+            "Reporting-delay analysis",
             delay_rows,
-            f"{flagged_rows} calendar-order flags excluded",
+            [
+                f"{flagged_rows:,} excluded from this calculation only",
+                "Report date came before the sighting date",
+            ],
         ),
     ]
     items = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
-        '<title id="title">Reported sightings sample flow</title>',
-        '<desc id="desc">A flow diagram showing that all records are retained for general analysis while calendar-order warnings are excluded only from reporting-delay statistics.</desc>',
-        '<rect width="100%" height="100%" fill="#ffffff"/>',
-        '<text x="70" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#16202a">Reported Sightings Sample Flow</text>',
-        f'<text x="70" y="84" font-family="Arial, sans-serif" font-size="16" fill="#536171">{escape(context.dataset_label)} • every material sample change is disclosed</text>',
+        f'<title id="title">{escape(chart_title)}</title>',
+        (
+            '<desc id="desc">A flow diagram showing that every report remains '
+            'in general analysis while records whose report date precedes the '
+            'sighting date are excluded only from reporting-delay calculations.</desc>'
+        ),
+        '<rect width="100%" height="100%" fill="#fbfcfd"/>',
+        f'<text x="55" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">{escape(chart_title)}</text>',
+        f'<text x="55" y="84" font-family="Arial, sans-serif" font-size="16" fill="#52636d">{escape(context.dataset_label)} • every analysis-specific exclusion is disclosed</text>',
     ]
-    for index, (x, title, count, note) in enumerate(boxes):
+    for index, (x, title, count, notes) in enumerate(boxes):
         items.extend(
             [
-                f'<rect x="{x}" y="145" width="240" height="135" rx="12" fill="#eef4f7" stroke="#356a86" stroke-width="2"/>',
-                f'<text x="{x + 120}" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#16202a">{escape(title)}</text>',
-                f'<text x="{x + 120}" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#356a86">{count:,}</text>',
-                f'<text x="{x + 120}" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#536171">{escape(note)}</text>',
+                f'<rect x="{x}" y="145" width="270" height="165" rx="12" fill="#eef6f7" stroke="#145f73" stroke-width="2"/>',
+                f'<text x="{x + 135}" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#10242d">{escape(title)}</text>',
+                f'<text x="{x + 135}" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#145f73">{count:,}</text>',
+                f'<text x="{x + 135}" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#52636d">',
             ]
         )
+        for note_index, note in enumerate(notes):
+            dy = "0" if note_index == 0 else "20"
+            items.append(
+                f'<tspan x="{x + 135}" dy="{dy}">{escape(note)}</tspan>'
+            )
+        items.append("</text>")
         if index < len(boxes) - 1:
             items.extend(
                 [
-                    f'<line x1="{x + 240}" y1="212" x2="{x + 295}" y2="212" stroke="#64748b" stroke-width="3"/>',
-                    f'<polygon points="{x + 295},212 {x + 282},204 {x + 282},220" fill="#64748b"/>',
+                    f'<line x1="{x + 270}" y1="227" x2="{x + 305}" y2="227" stroke="#6b7e87" stroke-width="3"/>',
+                    f'<polygon points="{x + 305},227 {x + 292},219 {x + 292},235" fill="#6b7e87"/>',
                 ]
             )
+    items.append(
+        f'<text x="55" y="382" font-family="Arial, sans-serif" font-size="14" fill="#52636d">General analysis uses every report. Only reporting-delay calculations exclude the {flagged_rows:,} date-order records.</text>'
+    )
     items.append("</svg>")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(items) + "\n", encoding="utf-8")

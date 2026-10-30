@@ -1,54 +1,77 @@
 # UFO/UAP Sightings Quantitative Analysis
 
-> A reproducible Python pipeline for cleaning, validating, visualizing, and statistically analyzing reported UFO/UAP sighting datasets.
+> Explore patterns in reported UFO/UAP sightings through a transparent, repeatable data-analysis experience.
+
+UAP is a newer term commonly used alongside UFO. This repository studies **reported records**. It does not verify underlying events or establish causal relationships.
+
+[![CI](https://github.com/LuckyGitHub777/ufo-uap-sightings-analysis/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/LuckyGitHub777/ufo-uap-sightings-analysis/actions/workflows/ci.yml)
+[![Public Boundary](https://github.com/LuckyGitHub777/ufo-uap-sightings-analysis/actions/workflows/public-boundary.yml/badge.svg?branch=main)](https://github.com/LuckyGitHub777/ufo-uap-sightings-analysis/actions/workflows/public-boundary.yml)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/LuckyGitHub777/ufo-uap-sightings-analysis)
+
+## The Story
+
+This project began as a quantitative-analysis final project built around a large real-world sighting-report dataset. The first version automated data preparation, exploratory visualizations, statistical comparisons, correlation, regression, and written findings.
+
+A later verification and validation review found that reproducible code can still produce misleading results when date meanings, geographic identifiers, exclusions, or statistical tests do not match the question being asked.
+
+Rather than hide those limitations, the project was rebuilt around explicit validation, visible record accounting, regression tests, synthetic demonstration data, safer statistical behavior, and clear interpretation boundaries. The result is a reusable analysis tool and a documented example of how analytical work can improve through critical review.
+
+## Evidence Status
+
+| Evidence class | Current status |
+|---|---|
+| Software behavior | Tested through unit, deterministic, privacy, manifest, and installed-wheel controls |
+| Synthetic demonstration | Reproducible and safe to explore |
+| Data-quality controls | Visible and regression-tested |
+| Real-world sighting conclusions | Not claimed |
+| Event verification | Not performed |
+| Causal interpretation | Not supported |
+| Future geographic research | Preserved as planned work, not validated findings |
+
+## See the Experience
+
+![Reported sighting shapes in the synthetic demonstration](reports/example/figures/reports-by-shape.svg)
+
+*Example output generated from synthetic demonstration data. It shows the software’s reporting experience, not real-world UFO/UAP findings.*
+
+**Prefer to look around first?** Open the curated [example experience](reports/example/README.md), then explore the [analysis summary](reports/example/analysis-summary.md) and [figures](reports/example/figures/) without running anything.
+
+## Try the Demonstration
+
+The easiest path is the **Open in GitHub Codespaces** badge above. Codespaces opens a ready-to-run workspace in your browser, so nothing needs to be installed locally.
+
+After the workspace finishes loading, enter this command in the terminal:
 
 ```bash
 python -m sightings_analysis demo
 ```
 
-No external dataset, scraping, API key, account, or personal information is required for the demonstration. Use **GitHub Codespaces** for a zero-local-setup experience, or Python 3.11+ for local execution.
+The demo creates 5,000 generated example records. It does not download, publish, or analyze real witness reports. No external dataset, scraping, API key, account, or personal information is required.
 
-The pipeline:
+### What happens next
 
-- validates temporal and U.S. state-coded data before analysis,
-- generates exploratory figures and structured statistical outputs,
-- records sample sizes, quality flags, exclusions, zero-report months, and methodology limits.
+1. The tool creates the demonstration records.
+2. It validates the data and explains any quality findings.
+3. It generates charts and statistical results.
+4. It records the files and hashes needed for reproducibility.
+5. It tells you exactly where the results were saved.
 
-![Sample flow for the synthetic demonstration](reports/example/figures/sample-flow.svg)
+### Open this first
 
-This project analyzes patterns in **reported records**. It does not verify underlying events or establish causal relationships.
-
-## Start Here
-
-### Zero local setup with Codespaces
-
-1. Open this repository on GitHub.
-2. Select **Code → Codespaces → Create codespace on main**.
-3. Run:
-
-```bash
-python -m sightings_analysis demo
+```text
+reports/demo/analysis-summary.md
 ```
 
-The development container installs the package and opens at the repository root.
+This human-readable report explains what the data represents, what the demonstration shows, what the statistics mean, and what the results do not establish.
 
-### Local demonstration
+The other primary destinations are:
 
-From the repository directory:
+- `reports/demo/figures/`: visual results
+- `reports/demo/data-quality-report.json`: complete validation evidence
+- `reports/demo/run-manifest.json`: reproducibility and output hashes
 
-```bash
-python -m sightings_analysis demo
-```
-
-The demo creates and analyzes 5,000 deterministic synthetic reports inside `reports/demo/`. It never writes into the installed package directory.
-
-### See every command
-
-```bash
-python -m sightings_analysis --help
-```
-
-## What the Demo Creates
+<details>
+<summary>See the complete demonstration output</summary>
 
 ```text
 reports/demo/
@@ -69,11 +92,76 @@ reports/demo/
     └── sample-flow.svg
 ```
 
-The command reports how many records were analyzed, how many quality findings occurred, and exactly where the outputs were saved.
+</details>
 
-## Bring Authorized Data
+## Choose Your Path
 
-The v1 workflow supports UTF-8 CSV files with five fields and two-letter U.S. state or DC codes.
+### Explore in the browser
+
+Use Codespaces when you want a guided browser workspace with no local installation.
+
+### Run locally
+
+Requires Python 3.11 or newer:
+
+```bash
+git clone https://github.com/LuckyGitHub777/ufo-uap-sightings-analysis.git
+cd ufo-uap-sightings-analysis
+python -m sightings_analysis demo
+```
+
+A release ZIP may also be downloaded and extracted. Open a terminal in the extracted repository folder and run the same demo command.
+
+### See every command
+
+```bash
+python -m sightings_analysis --help
+```
+
+## What the Review Changed
+
+Three examples capture the main lessons:
+
+- **Dates:** compare date-only fields as calendar dates, not midnight timestamps.
+- **Geography:** standardize identifiers before joining datasets.
+- **Statistics:** use tests that answer the research question actually being asked.
+
+The review also made exclusions visible, retained zero-report months, added controlled sparse-data behavior, and converted methodology defects into regression tests.
+
+Read the complete project record:
+
+- [`case-study/original-project.md`](case-study/original-project.md)
+- [`case-study/methodology-audit.md`](case-study/methodology-audit.md)
+- [`case-study/lessons-and-evolution.md`](case-study/lessons-and-evolution.md)
+
+### What this project demonstrates
+
+- Preparing and validating structured data before analysis
+- Producing descriptive statistics and exploratory visualizations
+- Selecting statistical methods that match the research question
+- Recording sample sizes, exclusions, and data-quality limitations
+- Distinguishing reproducibility from analytical validity
+- Communicating findings without overstating the evidence
+- Converting an analysis into tested, reusable software
+
+## Analyze Authorized Data
+
+Version 1 expects a prepared UTF-8 CSV with five fields and two-letter U.S. state or DC codes. It does not automatically convert an arbitrary dataset into the required schema.
+
+Example:
+
+```csv
+report_id,occurred_at,reported_date,state,shape
+EXAMPLE-001,2024-06-15T21:30,2024-06-16,CA,light
+```
+
+Before validation:
+
+- rename columns to the documented names,
+- convert state names to two-letter codes,
+- format dates as shown,
+- remove narrative, contact, coordinate, and direct-link columns,
+- retain one unique `report_id` per row.
 
 Create a ready-to-edit template and field guide:
 
@@ -97,7 +185,7 @@ python -m sightings_analysis validate \
   --json
 ```
 
-Analyze it after reviewing the validation results:
+Analyze the data after reviewing the validation results:
 
 ```bash
 python -m sightings_analysis analyze \
@@ -105,7 +193,7 @@ python -m sightings_analysis analyze \
   --output reports/my-analysis
 ```
 
-When material calendar-order warnings exist, acknowledge them explicitly:
+A **date-order warning** means the report date is earlier than the reported sighting date. When material warnings exist, review them and continue explicitly only when appropriate:
 
 ```bash
 python -m sightings_analysis analyze \
@@ -114,87 +202,87 @@ python -m sightings_analysis analyze \
   --allow-warnings
 ```
 
-The schema is documented in [`docs/data-schema.md`](docs/data-schema.md). The tool requires `--force` before replacing existing output and never modifies the source CSV.
+The tool requires `--force` before replacing existing output and never modifies the source CSV.
 
-## Why This Repository Exists
+See [`docs/data-schema.md`](docs/data-schema.md) and [`docs/bring-your-own-data.md`](docs/bring-your-own-data.md).
 
-The project began as a December 2024 quantitative-analysis final project. The original workflow automated data preparation, temporal feature engineering, exploratory visualization, hypothesis testing, correlation, regression, and written findings.
+## Data Quality and Record Use
 
-A later methodology V&V review identified material issues involving date semantics, geographic identifier matching, hidden sample attrition, outlier treatment, and hypothesis design. This version preserves the original analytical achievement while correcting those weaknesses and encoding the lessons into tests, validation controls, complete monthly sequences, and transparent sample-flow reporting.
+![Flow diagram showing that all 5,000 synthetic reports are retained for general analysis while 34 date-order records are excluded only from reporting-delay calculations](reports/example/figures/sample-flow.svg)
 
-Read the project evolution:
+All 5,000 generated reports remain part of the general analysis. Thirty-four records have a report date earlier than the sighting date. Those records remain visible in the quality report but are excluded only from reporting-delay calculations, which therefore use 4,966 records.
 
-- [`case-study/original-project.md`](case-study/original-project.md)
-- [`case-study/methodology-audit.md`](case-study/methodology-audit.md)
-- [`case-study/lessons-and-evolution.md`](case-study/lessons-and-evolution.md)
+The generated dataset includes these date-order cases so the demonstration can show how the validation and sample-accounting controls handle them.
 
-## Example Outputs
+The machine-readable [`sample-flow.csv`](reports/example/sample-flow.csv) records every analysis-specific exclusion and its reason.
+
+## Understand the Results
+
+The generated summary is intentionally ordered for people:
+
+1. a concise overview,
+2. a plain-language explanation,
+3. data-quality and coverage details,
+4. detailed statistics,
+5. a short glossary,
+6. clear interpretation limits,
+7. the files created.
+
+The figures demonstrate the reporting experience:
 
 | Figure | Purpose |
 |---|---|
 | [Reports by year](reports/example/figures/reports-by-year.svg) | Demonstrates complete-period temporal counts |
-| [Reports by month](reports/example/figures/reports-by-month.svg) | Shows calendar-month distribution across the synthetic sample |
+| [Reports by month](reports/example/figures/reports-by-month.svg) | Shows calendar-month distribution |
 | [Reports by time of day](reports/example/figures/reports-by-time-of-day.svg) | Demonstrates derived temporal categories |
 | [Reports by state](reports/example/figures/reports-by-state.svg) | Preserves the project’s geographic-analysis identity |
 | [Reports by shape](reports/example/figures/reports-by-shape.svg) | Shows standardized reported-shape categories |
-| [Sample flow](reports/example/figures/sample-flow.svg) | Makes analysis-specific exclusions visible |
+| [Record use](reports/example/figures/sample-flow.svg) | Makes analysis-specific exclusions visible |
 
-The complete committed example is available in [`reports/example/`](reports/example/).
+## Scope and Responsible Interpretation
 
-## Current Scope
+This release is a first-pass **U.S. sighting-report validation, descriptive-analysis, and temporal-statistics pipeline**.
 
-This v1 release is a first-pass **U.S. sighting-report validation, descriptive-analysis, and temporal-statistics pipeline**.
+It does not provide military-base or nuclear-facility comparisons, population-adjusted rates, proximity analysis, international geography, or text analysis. Those historical research questions are preserved in the case study but are not presented as validated findings.
 
-It does not yet provide military-base or nuclear-facility comparisons, population-adjusted rates, proximity analysis, international geography, or text analysis. Those original research questions are preserved in the case study but are not presented as validated headline findings.
+Core interpretation rules:
 
-## Public Data Boundary
-
-This repository contains only deterministic synthetic report data and safe example outputs. It does not contain scraped reports, witness narratives, original course submissions, personal logs, or third-party raw datasets.
-
-Users are responsible for ensuring they are authorized to access and analyze their own datasets. Automated public-boundary checks support—but do not replace—human review.
-
-## Methodology Principles
-
-- Compare calendar dates when one field is date-only.
-- Standardize geographic identifiers before joining datasets.
-- Measure and disclose join coverage.
-- Retain quality flags instead of silently deleting records.
-- Preserve zero-report months in temporal sequences.
-- Scope exclusions to the analysis that requires them.
-- Mark unsupported statistics as not calculated instead of crashing.
-- Align every statistical test with the research question.
-- Distinguish reproducibility from validity.
-- Describe associations without claiming causation.
+- Report counts are not verified physical events.
+- Correlation does not establish causation.
+- State-level counts do not establish proximity.
+- Synthetic results do not describe the real world.
+- User-data results remain limited by source-data quality.
 
 See [`docs/methodology.md`](docs/methodology.md) and [`docs/responsible-interpretation.md`](docs/responsible-interpretation.md).
 
-## Development and Release Controls
+## Public Data Boundary
 
-Run the complete test suite:
+This repository contains deterministic synthetic report data and safe example outputs. It does not contain scraped reports, witness narratives, original course submissions, personal logs, or third-party raw datasets.
+
+Users are responsible for ensuring they are authorized to access and analyze their own datasets. Automated public-boundary checks support, but do not replace, human review.
+
+## Contributing and Security
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution rules and privacy-safe issue guidance.
+
+Report vulnerabilities privately as described in [`SECURITY.md`](SECURITY.md). Do not disclose vulnerability details, credentials, personal data, or restricted datasets through public issues or pull requests.
+
+## Development and Release Controls
 
 ```bash
 python -m unittest discover -s tests -v
-```
-
-Run the public-boundary scan:
-
-```bash
 python -m sightings_analysis privacy-scan .
-```
-
-Verify the release manifest:
-
-```bash
 python -m sightings_analysis verify-release
 ```
 
-After intentionally changing release files, regenerate the manifest:
+After intentionally changing controlled release files:
 
 ```bash
 python -m sightings_analysis build-release-manifest --force
+python -m sightings_analysis verify-release
 ```
 
-See [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md) and [`release-validation-report.md`](release-validation-report.md).
+See [`docs/experience-contract.md`](docs/experience-contract.md), [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md), and [`release-validation-report.md`](release-validation-report.md).
 
 ## Roadmap
 

@@ -27,205 +27,205 @@
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 2
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 3
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 4
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 5
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 6
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 7
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 8
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 9
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 10
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 11
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 12
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 13
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 14
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 15
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 16
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 17
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 18
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 19
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 20
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 21
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 22
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 23
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 24
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 25
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 26
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 27
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 28
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 29
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 30
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 31
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 32
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 33
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 34
     },
     {
       "code": "negative_calendar_order",
       "field": "reported_date",
-      "message": "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+      "message": "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
       "row": 35
     }
   ]

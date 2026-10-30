@@ -1,38 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
 <title id="title">Reported Sightings by Shape</title>
 <desc id="desc">Horizontal bar chart of reported sighting counts by standardized shape category for the synthetic demonstration.</desc>
-<rect width="100%" height="100%" fill="#ffffff"/>
-<text x="70" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#16202a">Reported Sightings by Shape</text>
-<text x="70" y="78" font-family="Arial, sans-serif" font-size="16" fill="#536171">Synthetic demonstration • n=5,000 • standardized categories</text>
-<text x="166" y="130" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">light</text>
-<rect x="180" y="115" width="740.00" height="22" rx="3" fill="#356a86"/>
-<text x="928.00" y="131" font-family="Arial, sans-serif" font-size="12" fill="#16202a">1351</text>
-<text x="166" y="164" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">circle</text>
-<rect x="180" y="149" width="412.45" height="22" rx="3" fill="#356a86"/>
-<text x="600.45" y="165" font-family="Arial, sans-serif" font-size="12" fill="#16202a">753</text>
-<text x="166" y="198" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">triangle</text>
-<rect x="180" y="183" width="323.17" height="22" rx="3" fill="#356a86"/>
-<text x="511.17" y="199" font-family="Arial, sans-serif" font-size="12" fill="#16202a">590</text>
-<text x="166" y="232" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">fireball</text>
-<rect x="180" y="217" width="263.46" height="22" rx="3" fill="#356a86"/>
-<text x="451.46" y="233" font-family="Arial, sans-serif" font-size="12" fill="#16202a">481</text>
-<text x="166" y="266" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">sphere</text>
-<rect x="180" y="251" width="238.82" height="22" rx="3" fill="#356a86"/>
-<text x="426.82" y="267" font-family="Arial, sans-serif" font-size="12" fill="#16202a">436</text>
-<text x="166" y="300" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">disk</text>
-<rect x="180" y="285" width="217.45" height="22" rx="3" fill="#356a86"/>
-<text x="405.45" y="301" font-family="Arial, sans-serif" font-size="12" fill="#16202a">397</text>
-<text x="166" y="334" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">formation</text>
-<rect x="180" y="319" width="188.97" height="22" rx="3" fill="#356a86"/>
-<text x="376.97" y="335" font-family="Arial, sans-serif" font-size="12" fill="#16202a">345</text>
-<text x="166" y="368" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">oval</text>
-<rect x="180" y="353" width="155.01" height="22" rx="3" fill="#356a86"/>
-<text x="343.01" y="369" font-family="Arial, sans-serif" font-size="12" fill="#16202a">283</text>
-<text x="166" y="402" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">unknown</text>
-<rect x="180" y="387" width="115.03" height="22" rx="3" fill="#356a86"/>
-<text x="303.03" y="403" font-family="Arial, sans-serif" font-size="12" fill="#16202a">210</text>
-<text x="166" y="436" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">rectangle</text>
-<rect x="180" y="421" width="84.35" height="22" rx="3" fill="#356a86"/>
-<text x="272.35" y="437" font-family="Arial, sans-serif" font-size="12" fill="#16202a">154</text>
-<text x="70" y="478" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Synthetic demonstration • descriptive counts only</text>
+<rect width="100%" height="100%" fill="#fbfcfd"/>
+<text x="70" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">Reported Sightings by Shape</text>
+<text x="70" y="78" font-family="Arial, sans-serif" font-size="16" fill="#52636d">Synthetic demonstration • n=5,000 • standardized categories</text>
+<text x="166" y="130" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">light</text>
+<rect x="180" y="115" width="740.00" height="22" rx="3" fill="#145f73"/>
+<text x="928.00" y="131" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1351</text>
+<text x="166" y="164" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">circle</text>
+<rect x="180" y="149" width="412.45" height="22" rx="3" fill="#145f73"/>
+<text x="600.45" y="165" font-family="Arial, sans-serif" font-size="12" fill="#10242d">753</text>
+<text x="166" y="198" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">triangle</text>
+<rect x="180" y="183" width="323.17" height="22" rx="3" fill="#145f73"/>
+<text x="511.17" y="199" font-family="Arial, sans-serif" font-size="12" fill="#10242d">590</text>
+<text x="166" y="232" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">fireball</text>
+<rect x="180" y="217" width="263.46" height="22" rx="3" fill="#145f73"/>
+<text x="451.46" y="233" font-family="Arial, sans-serif" font-size="12" fill="#10242d">481</text>
+<text x="166" y="266" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">sphere</text>
+<rect x="180" y="251" width="238.82" height="22" rx="3" fill="#145f73"/>
+<text x="426.82" y="267" font-family="Arial, sans-serif" font-size="12" fill="#10242d">436</text>
+<text x="166" y="300" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">disk</text>
+<rect x="180" y="285" width="217.45" height="22" rx="3" fill="#145f73"/>
+<text x="405.45" y="301" font-family="Arial, sans-serif" font-size="12" fill="#10242d">397</text>
+<text x="166" y="334" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">formation</text>
+<rect x="180" y="319" width="188.97" height="22" rx="3" fill="#145f73"/>
+<text x="376.97" y="335" font-family="Arial, sans-serif" font-size="12" fill="#10242d">345</text>
+<text x="166" y="368" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">oval</text>
+<rect x="180" y="353" width="155.01" height="22" rx="3" fill="#145f73"/>
+<text x="343.01" y="369" font-family="Arial, sans-serif" font-size="12" fill="#10242d">283</text>
+<text x="166" y="402" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">unknown</text>
+<rect x="180" y="387" width="115.03" height="22" rx="3" fill="#145f73"/>
+<text x="303.03" y="403" font-family="Arial, sans-serif" font-size="12" fill="#10242d">210</text>
+<text x="166" y="436" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#30444e">rectangle</text>
+<rect x="180" y="421" width="84.35" height="22" rx="3" fill="#145f73"/>
+<text x="272.35" y="437" font-family="Arial, sans-serif" font-size="12" fill="#10242d">154</text>
+<text x="70" y="478" font-family="Arial, sans-serif" font-size="13" fill="#667780">Synthetic demonstration • descriptive counts only</text>
 </svg>

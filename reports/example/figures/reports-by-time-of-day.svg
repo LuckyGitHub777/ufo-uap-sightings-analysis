@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
 <title id="title">Reported Sightings by Time of Day</title>
 <desc id="desc">Bar chart of reported sighting counts by morning, afternoon, evening, and night for the synthetic demonstration.</desc>
-<rect width="100%" height="100%" fill="#ffffff"/>
-<text x="90" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#16202a">Reported Sightings by Time of Day</text>
-<text x="90" y="78" font-family="Arial, sans-serif" font-size="16" fill="#536171">Synthetic demonstration • n=5,000 • local clock categories</text>
-<line x1="90" y1="470" x2="960" y2="470" stroke="#98a2ad"/>
-<rect x="124.00" y="281.64" width="175.00" height="188.36" rx="3" fill="#356a86"/>
-<text x="211.50" y="273.64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#16202a">991</text>
-<text x="211.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">Morning</text>
-<rect x="333.00" y="236.59" width="175.00" height="233.41" rx="3" fill="#356a86"/>
-<text x="420.50" y="228.59" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#16202a">1228</text>
-<text x="420.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">Afternoon</text>
-<rect x="542.00" y="110.00" width="175.00" height="360.00" rx="3" fill="#356a86"/>
-<text x="629.50" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#16202a">1894</text>
-<text x="629.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">Evening</text>
-<rect x="751.00" y="301.40" width="175.00" height="168.60" rx="3" fill="#356a86"/>
-<text x="838.50" y="293.40" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#16202a">887</text>
-<text x="838.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">Night</text>
-<text x="90" y="536" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Synthetic demonstration • descriptive counts only</text>
+<rect width="100%" height="100%" fill="#fbfcfd"/>
+<text x="90" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">Reported Sightings by Time of Day</text>
+<text x="90" y="78" font-family="Arial, sans-serif" font-size="16" fill="#52636d">Synthetic demonstration • n=5,000 • local clock categories</text>
+<line x1="90" y1="470" x2="960" y2="470" stroke="#c6d0d6"/>
+<rect x="124.00" y="281.64" width="175.00" height="188.36" rx="3" fill="#145f73"/>
+<text x="211.50" y="273.64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">991</text>
+<text x="211.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Morning</text>
+<rect x="333.00" y="236.59" width="175.00" height="233.41" rx="3" fill="#145f73"/>
+<text x="420.50" y="228.59" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1228</text>
+<text x="420.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Afternoon</text>
+<rect x="542.00" y="110.00" width="175.00" height="360.00" rx="3" fill="#145f73"/>
+<text x="629.50" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1894</text>
+<text x="629.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Evening</text>
+<rect x="751.00" y="301.40" width="175.00" height="168.60" rx="3" fill="#145f73"/>
+<text x="838.50" y="293.40" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">887</text>
+<text x="838.50" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Night</text>
+<text x="90" y="536" font-family="Arial, sans-serif" font-size="13" fill="#667780">Synthetic demonstration • descriptive counts only</text>
 </svg>
