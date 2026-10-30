@@ -1,0 +1,30 @@
+name: Feature request
+description: Propose a bounded improvement to usability, validation, analysis, or documentation.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Describe the user need before proposing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Evidence and interpretation boundary
+      description: Explain how the proposal avoids unsupported claims or unsafe data handling.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-boundary confirmation
+      options:
+        - label: This request does not include personal data, witness narratives, credentials, restricted datasets, or raw third-party reports.
+          required: true

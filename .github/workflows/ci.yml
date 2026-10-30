@@ -10,12 +10,17 @@ permissions:
 jobs:
   tests:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
       matrix:
         python-version: ["3.11", "3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install package
@@ -30,9 +35,14 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.11"
       - name: Install package
@@ -43,3 +53,30 @@ jobs:
         run: python -m sightings_analysis template --output smoke-template.csv
       - name: Run demo
         run: python -m sightings_analysis demo --output smoke-output
+
+  installed-wheel-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+      - name: Build wheel
+        run: python -m pip wheel . --no-deps --no-build-isolation --wheel-dir wheelhouse
+      - name: Create clean environment and install wheel
+        run: |
+          python -m venv wheel-smoke-env
+          wheel-smoke-env/bin/python -m pip install wheelhouse/*.whl
+      - name: Run installed package outside the repository
+        run: |
+          mkdir -p "$RUNNER_TEMP/ufo-wheel-smoke"
+          cd "$RUNNER_TEMP/ufo-wheel-smoke"
+          "$GITHUB_WORKSPACE/wheel-smoke-env/bin/python" -m sightings_analysis --help
+          "$GITHUB_WORKSPACE/wheel-smoke-env/bin/python" -m sightings_analysis demo --output demo-output
+          test -f demo-output/analysis-summary.md
+          test -f demo-output/input/synthetic-reports.csv

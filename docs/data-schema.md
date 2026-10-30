@@ -1,11 +1,11 @@
 # Data Schema
 
-The v1 pipeline accepts UTF-8 CSV files with five required columns and currently supports U.S. state-coded records.
+The v1 pipeline accepts UTF-8 CSV files with five required columns and currently supports U.S. state-coded records. It expects a prepared CSV and does not automatically convert an arbitrary dataset into this schema.
 
 | Column | Type | Example | Meaning |
 |---|---|---|---|
 | `report_id` | string | `R-00001` | Unique record identifier |
-| `occurred_at` | ISO-8601 date-time | `2024-06-15T21:30` | Local occurrence date and time |
+| `occurred_at` | ISO-8601 date-time | `2024-06-15T21:30` | Local sighting date and time |
 | `reported_date` | ISO-8601 date | `2024-06-16` | Calendar date the record was reported |
 | `state` | two-letter code | `CA` | U.S. state or District of Columbia |
 | `shape` | controlled text | `triangle` | Reported shape category |
@@ -29,6 +29,6 @@ The v1 analysis intentionally does not accept free-text, contact, exact-coordina
 - Duplicate report identifiers are blocking errors.
 - Invalid dates and state codes are blocking errors.
 - Unrecognized shapes are warnings and are grouped as `unknown`.
-- A report date preceding the occurrence calendar date is a material warning.
+- A **date-order warning** means the report date precedes the sighting calendar date. The row remains in general analysis but is excluded from reporting-delay calculations.
 - Fewer than two observed months creates an advisory; descriptive analysis still runs and monthly statistics are marked `not_calculated`.
 - The source file is never modified.

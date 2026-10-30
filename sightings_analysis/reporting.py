@@ -41,6 +41,62 @@ def _format_metric(value: Any) -> str:
     return "Not calculated" if value in (None, "") else str(value)
 
 
+def _plain_language_interpretation(
+    period: dict[str, Any],
+    trend: dict[str, Any],
+    context: AnalysisContext,
+) -> str:
+    statements: list[str] = []
+
+    if period.get("status") == "calculated":
+        p_value = float(period["permutation_p_value"])
+        if p_value < 0.05:
+            statements.append(
+                "The difference between the two monthly-count periods is relatively "
+                "unusual under the no-difference resampling model. This is statistical "
+                "evidence about these records, not proof of causation or event validity."
+            )
+        else:
+            statements.append(
+                "The two monthly-count periods do not show strong evidence of a "
+                "difference under the no-difference resampling model."
+            )
+    else:
+        statements.append(
+            "The period comparison was not calculated because the available monthly "
+            "sequence was insufficient."
+        )
+
+    if trend.get("status") == "calculated":
+        correlation = float(trend["pearson_r"])
+        magnitude = abs(correlation)
+        strength = "weak" if magnitude < 0.3 else "moderate" if magnitude < 0.7 else "strong"
+        direction = "upward" if correlation > 0 else "downward" if correlation < 0 else "flat"
+        statements.append(
+            f"The simple monthly linear pattern is {strength} and {direction}. "
+            f"Its R² is {trend['r_squared']}, so the fitted line is only a descriptive "
+            "summary of the monthly variation."
+        )
+    else:
+        statements.append(
+            "The monthly trend was not calculated because the available monthly "
+            "sequence was insufficient."
+        )
+
+    if context.dataset_type == "synthetic":
+        statements.append(
+            "These generated results demonstrate the software and are not findings "
+            "about real-world UFO/UAP activity."
+        )
+    else:
+        statements.append(
+            "These statements describe the supplied records only and do not verify "
+            "underlying events or overcome source-data limitations."
+        )
+
+    return "\n".join(f"- {statement}" for statement in statements)
+
+
 def write_outputs(
     output_dir: Path,
     *,
@@ -137,7 +193,7 @@ def write_outputs(
             "flagged": delay["excluded_negative_calendar_rows"],
             "excluded": delay["excluded_negative_calendar_rows"],
             "retained": delay["valid_rows"],
-            "reason": "Negative calendar order excluded only from delay statistics",
+            "reason": "Report date before sighting date; excluded only from reporting-delay calculations",
         },
     ]
     with flow_path.open("w", newline="", encoding="utf-8") as handle:
@@ -154,6 +210,7 @@ def write_outputs(
     period = results_by_name["monthly_count_period_comparison"]
     trend = results_by_name["monthly_linear_trend"]
     month_span = analysis["month_span"]
+    plain_language = _plain_language_interpretation(period, trend, context)
 
     if period["status"] == "calculated":
         period_section = f"""### Monthly Count Statistical Demonstration
@@ -199,7 +256,9 @@ def write_outputs(
 
     summary = f"""# UFO/UAP Sightings Analysis Summary
 
-## Scope
+> Start here. This report explains the most important results before presenting detailed statistics.
+
+## At a Glance
 
 - Dataset: **{context.dataset_label}**
 - Records analyzed: **{analysis['input_rows']:,}**
@@ -208,29 +267,40 @@ def write_outputs(
 - Blocking validation errors: **{validation['blocking_error_count']}**
 - Validation warnings: **{validation['warning_count']}**
 
-## Calendar Coverage
+## What the Results Mean
+
+{plain_language}
+
+## Coverage and Data Quality
 
 - Monthly sequence: **{month_span['start']} through {month_span['end']}**
 - Calendar months represented: **{month_span['months_represented']}**
 - Months containing reports: **{month_span['months_with_reports']}**
 - Zero-report months retained in the time series: **{month_span['zero_report_months']}**
 
-## Descriptive Results
+## Reporting and Record Quality
 
 - Same-calendar-day reports: **{delay['same_day_rows']:,}**
 - Long reporting delays over 29 days: **{delay['long_delay_rows']:,}**
-- Negative calendar-order rows excluded only from delay statistics: **{delay['excluded_negative_calendar_rows']:,}**
+- Reports excluded only from reporting-delay calculations because the report date came before the sighting date: **{delay['excluded_negative_calendar_rows']:,}**
 - Median valid reporting delay: **{_format_metric(delay['median_valid_days'])} days**
 
-## Statistical Results
+## Detailed Statistics
 
 {period_section}
 {trend_section}
-## Interpretation Boundary
+## Statistical Glossary
+
+- **Permutation p-value:** how unusual the observed period difference would be under repeated random reassignment.
+- **Pearson correlation:** the direction and strength of a simple linear pattern over time.
+- **Slope:** the estimated change in reports per calendar month.
+- **R²:** the proportion of monthly variation described by the simple linear trend.
+
+## What This Does Not Establish
 
 {boundary}
 
-## Output Inventory
+## Files Created
 
 - `data-quality-report.json`
 - `descriptive-statistics.json`

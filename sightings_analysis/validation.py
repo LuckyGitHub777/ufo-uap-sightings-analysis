@@ -188,7 +188,7 @@ def validate_reports(path: Path) -> dict[str, Any]:
                     result["warnings"].append(
                         _finding(
                             "negative_calendar_order",
-                            "reported_date occurs before the occurrence calendar date; the row remains in general analysis but is excluded from reporting-delay statistics.",
+                            "The report date is earlier than the sighting date. The row remains in general analysis and is excluded only from reporting-delay calculations.",
                             row=row_number,
                             field="reported_date",
                         )

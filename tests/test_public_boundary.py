@@ -36,6 +36,25 @@ class PublicBoundaryTests(unittest.TestCase):
         self.assertNotIn("bytes.fromhex", source)
         self.assertNotIn("BLOCKED_TERMS", source)
 
+    def test_readme_uses_final_first_timer_story(self) -> None:
+        text = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertNotIn("December 2024", text)
+        self.assertNotIn("calendar-order flags excluded", text)
+        self.assertIn("## The Story", text)
+        self.assertIn("## See the Experience", text)
+        self.assertIn("## Try the Demonstration", text)
+        self.assertIn("### Open this first", text)
+        self.assertIn("## Choose Your Path", text)
+        self.assertIn("UAP is a newer term commonly used alongside UFO.", text)
+        self.assertIn(
+            "It does not download, publish, or analyze real witness reports.",
+            text,
+        )
+        self.assertIn(
+            "Example output generated from synthetic demonstration data.",
+            text,
+        )
+
     def test_release_manifest_verifies(self) -> None:
         self.assertEqual(verify_manifest(ROOT), [])
 

@@ -1,23 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" role="img" aria-labelledby="title desc">
-<title id="title">Reported sightings sample flow</title>
-<desc id="desc">A flow diagram showing that all records are retained for general analysis while calendar-order warnings are excluded only from reporting-delay statistics.</desc>
-<rect width="100%" height="100%" fill="#ffffff"/>
-<text x="70" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#16202a">Reported Sightings Sample Flow</text>
-<text x="70" y="84" font-family="Arial, sans-serif" font-size="16" fill="#536171">Synthetic demonstration • every material sample change is disclosed</text>
-<rect x="70" y="145" width="240" height="135" rx="12" fill="#eef4f7" stroke="#356a86" stroke-width="2"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#16202a">Input</text>
-<text x="190" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#356a86">5,000</text>
-<text x="190" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#536171">All synthetic demonstration reports</text>
-<line x1="310" y1="212" x2="365" y2="212" stroke="#64748b" stroke-width="3"/>
-<polygon points="365,212 352,204 352,220" fill="#64748b"/>
-<rect x="370" y="145" width="240" height="135" rx="12" fill="#eef4f7" stroke="#356a86" stroke-width="2"/>
-<text x="490" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#16202a">General analysis</text>
-<text x="490" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#356a86">5,000</text>
-<text x="490" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#536171">Rows retained</text>
-<line x1="610" y1="212" x2="665" y2="212" stroke="#64748b" stroke-width="3"/>
-<polygon points="665,212 652,204 652,220" fill="#64748b"/>
-<rect x="670" y="145" width="240" height="135" rx="12" fill="#eef4f7" stroke="#356a86" stroke-width="2"/>
-<text x="790" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#16202a">Delay analysis</text>
-<text x="790" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#356a86">4,966</text>
-<text x="790" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#536171">34 calendar-order flags excluded</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440" role="img" aria-labelledby="title desc">
+<title id="title">How the Demo Records Were Used</title>
+<desc id="desc">A flow diagram showing that every report remains in general analysis while records whose report date precedes the sighting date are excluded only from reporting-delay calculations.</desc>
+<rect width="100%" height="100%" fill="#fbfcfd"/>
+<text x="55" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">How the Demo Records Were Used</text>
+<text x="55" y="84" font-family="Arial, sans-serif" font-size="16" fill="#52636d">Synthetic demonstration • every analysis-specific exclusion is disclosed</text>
+<rect x="55" y="145" width="270" height="165" rx="12" fill="#eef6f7" stroke="#145f73" stroke-width="2"/>
+<text x="190" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#10242d">Reports read</text>
+<text x="190" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#145f73">5,000</text>
+<text x="190" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#52636d">
+<tspan x="190" dy="0">Synthetic demonstration reports</tspan>
+</text>
+<line x1="325" y1="227" x2="360" y2="227" stroke="#6b7e87" stroke-width="3"/>
+<polygon points="360,227 347,219 347,235" fill="#6b7e87"/>
+<rect x="365" y="145" width="270" height="165" rx="12" fill="#eef6f7" stroke="#145f73" stroke-width="2"/>
+<text x="500" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#10242d">General analysis</text>
+<text x="500" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#145f73">5,000</text>
+<text x="500" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#52636d">
+<tspan x="500" dy="0">All reports retained</tspan>
+</text>
+<line x1="635" y1="227" x2="670" y2="227" stroke="#6b7e87" stroke-width="3"/>
+<polygon points="670,227 657,219 657,235" fill="#6b7e87"/>
+<rect x="675" y="145" width="270" height="165" rx="12" fill="#eef6f7" stroke="#145f73" stroke-width="2"/>
+<text x="810" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#10242d">Reporting-delay analysis</text>
+<text x="810" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#145f73">4,966</text>
+<text x="810" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#52636d">
+<tspan x="810" dy="0">34 excluded from this calculation only</tspan>
+<tspan x="810" dy="20">Report date came before the sighting date</tspan>
+</text>
+<text x="55" y="382" font-family="Arial, sans-serif" font-size="14" fill="#52636d">General analysis uses every report. Only reporting-delay calculations exclude the 34 date-order records.</text>
 </svg>

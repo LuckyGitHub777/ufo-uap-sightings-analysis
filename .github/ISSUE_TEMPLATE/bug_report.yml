@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible software or documentation defect using synthetic data.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include real sighting reports, witness narratives, personal data, credentials, private infrastructure details, or restricted datasets.
+  - type: input
+    id: version
+    attributes:
+      label: Project version
+      placeholder: "1.0.1"
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.11"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11, macOS, Ubuntu"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command used
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal synthetic reproduction
+      description: Use only synthetic or otherwise non-sensitive example data.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-boundary confirmation
+      options:
+        - label: I have not included personal data, witness narratives, credentials, restricted datasets, or raw third-party reports.
+          required: true
