@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from . import METHODOLOGY_VERSION, __version__
+from .constants import TIME_BUCKET_LEGEND
 from .context import AnalysisContext
 from .visualization import write_figures
 
@@ -295,6 +296,7 @@ def write_outputs(
 - **Pearson correlation:** the direction and strength of a simple linear pattern over time.
 - **Slope:** the estimated change in reports per calendar month.
 - **R²:** the proportion of monthly variation described by the simple linear trend.
+- **Time of day:** {TIME_BUCKET_LEGEND}. Because the spans differ, compare categories with care.
 
 ## What This Does Not Establish
 

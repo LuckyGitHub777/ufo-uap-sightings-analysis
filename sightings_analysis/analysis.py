@@ -7,18 +7,8 @@ from pathlib import Path
 from statistics import median
 from typing import Any
 
-from .constants import ALLOWED_SHAPES
+from .constants import ALLOWED_SHAPES, time_of_day
 from .stats import mean, pearson_r, permutation_p_value, simple_linear_regression
-
-
-def _time_of_day(hour: int) -> str:
-    if 6 <= hour < 12:
-        return "Morning"
-    if 12 <= hour < 18:
-        return "Afternoon"
-    if 18 <= hour < 22:
-        return "Evening"
-    return "Night"
 
 
 def _month_key(value: datetime) -> str:
@@ -54,7 +44,7 @@ def load_rows(path: Path) -> list[dict[str, Any]]:
                     "state": source["state"].strip().upper(),
                     "shape": shape if shape in ALLOWED_SHAPES else "unknown",
                     "delay_days": (reported - occurred.date()).days,
-                    "time_of_day": _time_of_day(occurred.hour),
+                    "time_of_day": time_of_day(occurred.hour),
                 }
             )
     return rows

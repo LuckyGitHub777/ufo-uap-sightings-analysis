@@ -5,41 +5,41 @@
 <text x="90" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">Reported Sightings by Calendar Month</text>
 <text x="90" y="78" font-family="Arial, sans-serif" font-size="16" fill="#52636d">Synthetic demonstration • n=5,000 • aggregated across the covered years</text>
 <line x1="90" y1="470" x2="960" y2="470" stroke="#c6d0d6"/>
-<rect x="101.00" y="122.13" width="60.58" height="347.87" rx="3" fill="#145f73"/>
-<text x="131.29" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">430</text>
+<rect x="101.00" y="149.96" width="60.58" height="320.04" rx="3" fill="#145f73"/>
+<text x="131.29" y="141.96" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">430</text>
 <text x="131.29" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Jan</text>
-<rect x="172.58" y="143.17" width="60.58" height="326.83" rx="3" fill="#145f73"/>
-<text x="202.88" y="135.17" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">404</text>
+<rect x="172.58" y="169.32" width="60.58" height="300.68" rx="3" fill="#145f73"/>
+<text x="202.88" y="161.32" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">404</text>
 <text x="202.88" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Feb</text>
-<rect x="244.17" y="131.03" width="60.58" height="338.97" rx="3" fill="#145f73"/>
-<text x="274.46" y="123.03" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">419</text>
+<rect x="244.17" y="158.15" width="60.58" height="311.85" rx="3" fill="#145f73"/>
+<text x="274.46" y="150.15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">419</text>
 <text x="274.46" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Mar</text>
-<rect x="315.75" y="129.42" width="60.58" height="340.58" rx="3" fill="#145f73"/>
-<text x="346.04" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">421</text>
+<rect x="315.75" y="156.66" width="60.58" height="313.34" rx="3" fill="#145f73"/>
+<text x="346.04" y="148.66" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">421</text>
 <text x="346.04" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Apr</text>
-<rect x="387.33" y="110.00" width="60.58" height="360.00" rx="3" fill="#145f73"/>
-<text x="417.63" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">445</text>
+<rect x="387.33" y="138.80" width="60.58" height="331.20" rx="3" fill="#145f73"/>
+<text x="417.63" y="130.80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">445</text>
 <text x="417.63" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">May</text>
-<rect x="458.92" y="138.31" width="60.58" height="331.69" rx="3" fill="#145f73"/>
-<text x="489.21" y="130.31" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">410</text>
+<rect x="458.92" y="164.85" width="60.58" height="305.15" rx="3" fill="#145f73"/>
+<text x="489.21" y="156.85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">410</text>
 <text x="489.21" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Jun</text>
-<rect x="530.50" y="121.33" width="60.58" height="348.67" rx="3" fill="#145f73"/>
-<text x="560.79" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">431</text>
+<rect x="530.50" y="149.22" width="60.58" height="320.78" rx="3" fill="#145f73"/>
+<text x="560.79" y="141.22" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">431</text>
 <text x="560.79" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Jul</text>
-<rect x="602.08" y="121.33" width="60.58" height="348.67" rx="3" fill="#145f73"/>
-<text x="632.38" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">431</text>
+<rect x="602.08" y="149.22" width="60.58" height="320.78" rx="3" fill="#145f73"/>
+<text x="632.38" y="141.22" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">431</text>
 <text x="632.38" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Aug</text>
-<rect x="673.67" y="152.07" width="60.58" height="317.93" rx="3" fill="#145f73"/>
-<text x="703.96" y="144.07" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">393</text>
+<rect x="673.67" y="177.50" width="60.58" height="292.50" rx="3" fill="#145f73"/>
+<text x="703.96" y="169.50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">393</text>
 <text x="703.96" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Sep</text>
-<rect x="745.25" y="128.61" width="60.58" height="341.39" rx="3" fill="#145f73"/>
-<text x="775.54" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">422</text>
+<rect x="745.25" y="155.92" width="60.58" height="314.08" rx="3" fill="#145f73"/>
+<text x="775.54" y="147.92" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">422</text>
 <text x="775.54" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Oct</text>
-<rect x="816.83" y="141.55" width="60.58" height="328.45" rx="3" fill="#145f73"/>
-<text x="847.13" y="133.55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">406</text>
+<rect x="816.83" y="167.83" width="60.58" height="302.17" rx="3" fill="#145f73"/>
+<text x="847.13" y="159.83" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">406</text>
 <text x="847.13" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Nov</text>
-<rect x="888.42" y="156.11" width="60.58" height="313.89" rx="3" fill="#145f73"/>
-<text x="918.71" y="148.11" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">388</text>
+<rect x="888.42" y="181.22" width="60.58" height="288.78" rx="3" fill="#145f73"/>
+<text x="918.71" y="173.22" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">388</text>
 <text x="918.71" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">Dec</text>
 <text x="90" y="536" font-family="Arial, sans-serif" font-size="13" fill="#667780">Synthetic demonstration • descriptive counts only</text>
 </svg>

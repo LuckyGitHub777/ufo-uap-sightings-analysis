@@ -4,6 +4,7 @@ from html import escape
 from pathlib import Path
 from typing import Mapping
 
+from .constants import TIME_BUCKET_LEGEND
 from .context import AnalysisContext
 
 
@@ -44,7 +45,9 @@ def _bar_chart(
 
     for index, (label, value) in enumerate(zip(labels, values, strict=True)):
         x = margin_left + bar_gap + index * (bar_width + bar_gap)
-        bar_height = 0 if maximum == 0 else chart_height * value / maximum
+        # Scale to 92% of the plot height so the tallest bar's value label
+        # always sits above the bar instead of inside it.
+        bar_height = 0 if maximum == 0 else chart_height * 0.92 * value / maximum
         y = margin_top + chart_height - bar_height
         elements.append(
             f'<rect x="{x:.2f}" y="{y:.2f}" width="{bar_width:.2f}" height="{bar_height:.2f}" rx="3" fill="#145f73"/>'
@@ -239,10 +242,10 @@ def write_figures(
             figures_dir / "reports-by-time-of-day.svg",
             title="Reported Sightings by Time of Day",
             subtitle=f"{context.dataset_label} • n={rows:,} • local clock categories",
-            footer=footer,
+            footer=f"{footer} • {TIME_BUCKET_LEGEND}",
             labels=list(by_time.keys()),
             values=[int(value) for value in by_time.values()],
-            description=f"Bar chart of reported sighting counts by morning, afternoon, evening, and night for the {context.short_label}.",
+            description=f"Bar chart of reported sighting counts by morning, afternoon, evening, and night for the {context.short_label}. Categories: {TIME_BUCKET_LEGEND}.",
         ),
         "reports_by_state": _horizontal_bar_chart(
             figures_dir / "reports-by-state.svg",

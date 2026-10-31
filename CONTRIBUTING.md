@@ -24,6 +24,8 @@ python -m sightings_analysis build-release-manifest --force
 python -m sightings_analysis verify-release
 ```
 
+Workflow files are controlled release files. Dependabot updates to GitHub Actions therefore fail the manifest check until a maintainer reviews the new pin, regenerates the manifest on the Dependabot branch, and pushes that commit. This is intentional: it keeps workflow changes under explicit review.
+
 Keep pull requests focused. Explain the user problem, the change, the validation performed, and any remaining limitation.
 
 The public scanner checks generic patterns. Maintainers may additionally run a private denylist stored outside the repository through the `SIGHTINGS_PRIVATE_DENYLIST_FILE` environment variable.

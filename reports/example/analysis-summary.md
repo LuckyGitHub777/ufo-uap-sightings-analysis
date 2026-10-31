@@ -56,6 +56,7 @@
 - **Pearson correlation:** the direction and strength of a simple linear pattern over time.
 - **Slope:** the estimated change in reports per calendar month.
 - **R²:** the proportion of monthly variation described by the simple linear trend.
+- **Time of day:** Morning 06:00-11:59, Afternoon 12:00-17:59, Evening 18:00-21:59, Night 22:00-05:59 (unequal spans). Because the spans differ, compare categories with care.
 
 ## What This Does Not Establish
 

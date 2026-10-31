@@ -3,5 +3,5 @@
 A dependency-free pipeline for validating and analyzing reported sighting data.
 """
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 METHODOLOGY_VERSION = "1.0"
