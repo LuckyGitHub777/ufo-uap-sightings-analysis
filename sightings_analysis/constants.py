@@ -23,6 +23,19 @@ TIME_BUCKETS = (
     ("Night", 0, 6),
 )
 
+TIME_BUCKET_LEGEND = (
+    "Morning 06:00-11:59, Afternoon 12:00-17:59, Evening 18:00-21:59, "
+    "Night 22:00-05:59 (unequal spans)"
+)
+
+
+def time_of_day(hour: int) -> str:
+    """Map a clock hour to its time-of-day category using TIME_BUCKETS."""
+    for label, start, end in TIME_BUCKETS:
+        if start <= hour < end:
+            return label
+    raise ValueError(f"hour out of range: {hour}")
+
 SENSITIVE_COLUMN_NAMES = frozenset({
     "address", "email", "full_name", "name", "phone", "street_address",
     "witness_name", "exact_location", "latitude", "longitude",

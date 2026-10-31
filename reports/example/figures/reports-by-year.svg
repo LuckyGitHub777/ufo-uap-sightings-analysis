@@ -5,20 +5,20 @@
 <text x="90" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10242d">Reported Sightings by Year</text>
 <text x="90" y="78" font-family="Arial, sans-serif" font-size="16" fill="#52636d">Synthetic demonstration • n=5,000 • 2020-01-01 to 2024-12-31</text>
 <line x1="90" y1="470" x2="960" y2="470" stroke="#c6d0d6"/>
-<rect x="117.00" y="110.00" width="141.60" height="360.00" rx="3" fill="#145f73"/>
-<text x="187.80" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1027</text>
+<rect x="117.00" y="138.80" width="141.60" height="331.20" rx="3" fill="#145f73"/>
+<text x="187.80" y="130.80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1027</text>
 <text x="187.80" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">2020</text>
-<rect x="285.60" y="113.51" width="141.60" height="356.49" rx="3" fill="#145f73"/>
-<text x="356.40" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1017</text>
+<rect x="285.60" y="142.02" width="141.60" height="327.98" rx="3" fill="#145f73"/>
+<text x="356.40" y="134.02" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1017</text>
 <text x="356.40" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">2021</text>
-<rect x="454.20" y="116.31" width="141.60" height="353.69" rx="3" fill="#145f73"/>
-<text x="525.00" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1009</text>
+<rect x="454.20" y="144.60" width="141.60" height="325.40" rx="3" fill="#145f73"/>
+<text x="525.00" y="136.60" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">1009</text>
 <text x="525.00" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">2022</text>
-<rect x="622.80" y="122.62" width="141.60" height="347.38" rx="3" fill="#145f73"/>
-<text x="693.60" y="122.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">991</text>
+<rect x="622.80" y="150.41" width="141.60" height="319.59" rx="3" fill="#145f73"/>
+<text x="693.60" y="142.41" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">991</text>
 <text x="693.60" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">2023</text>
-<rect x="791.40" y="134.89" width="141.60" height="335.11" rx="3" fill="#145f73"/>
-<text x="862.20" y="126.89" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">956</text>
+<rect x="791.40" y="161.70" width="141.60" height="308.30" rx="3" fill="#145f73"/>
+<text x="862.20" y="153.70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10242d">956</text>
 <text x="862.20" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#30444e">2024</text>
 <text x="90" y="536" font-family="Arial, sans-serif" font-size="13" fill="#667780">Synthetic demonstration • descriptive counts only</text>
 </svg>

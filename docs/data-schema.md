@@ -22,6 +22,19 @@ python -m sightings_analysis template --output my-reports-template.csv
 
 The v1 analysis intentionally does not accept free-text, contact, exact-coordinate, or direct-link columns. This keeps the default workflow focused on aggregate quantitative analysis and reduces public-boundary risk.
 
+## Derived Time-of-Day Categories
+
+The pipeline derives a time-of-day category from the `occurred_at` hour:
+
+| Category | Local clock hours | Span |
+|---|---|---|
+| Morning | 06:00-11:59 | 6 hours |
+| Afternoon | 12:00-17:59 | 6 hours |
+| Evening | 18:00-21:59 | 4 hours |
+| Night | 22:00-05:59 | 8 hours |
+
+Because the spans differ, category totals are not directly comparable per hour. The legend appears on the time-of-day figure and in every generated summary.
+
 ## Validation Behavior
 
 - Missing required columns are blocking errors.

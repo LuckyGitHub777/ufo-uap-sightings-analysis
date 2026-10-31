@@ -5,21 +5,13 @@ import os
 import re
 from pathlib import Path
 
+from .constants import SENSITIVE_COLUMN_NAMES
+
 TEXT_SUFFIXES = {".md", ".txt", ".py", ".toml", ".yml", ".yaml", ".json", ".csv", ".html"}
 SKIP_PARTS = {".git", "__pycache__", "build", "dist", ".pytest_cache", ".venv", ".tox"}
-PROHIBITED_DATA_COLUMNS = {
-    "address",
-    "email",
-    "full_name",
-    "name",
-    "phone",
-    "summary",
-    "description",
-    "narrative",
-    "witness_name",
-    "link",
-    "url",
-}
+# Shared with intake validation so any column the analyzer refuses,
+# including coordinates, is also refused by the release-boundary scan.
+PROHIBITED_DATA_COLUMNS = SENSITIVE_COLUMN_NAMES
 PROHIBITED_RELEASE_NAMES = {".env", "id_rsa", "id_ed25519"}
 PROHIBITED_PATHS = {
     "data/raw",

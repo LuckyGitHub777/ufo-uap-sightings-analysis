@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.2
+
+Guardrail and maintenance fixes. No changes to validation rules, statistics, or record handling.
+
+- The release-boundary scanner now uses the same sensitive-column policy as intake validation, so committed CSVs with coordinate or exact-location columns are caught.
+- Time-of-day categories are defined once, and their unequal spans are disclosed on the figure, in generated summaries, and in the data schema.
+- Vertical bar charts leave headroom so the tallest bar's value label sits above the bar instead of inside it.
+- Updated `actions/setup-python` to v7.1.0, pinned to its full commit SHA.
+- Documented the manifest step that Dependabot workflow updates require.
+- Regenerated the committed example and release manifest.
+
 ## 1.0.1
 
 First-timer experience, interpretation, and release-maintenance closeout.

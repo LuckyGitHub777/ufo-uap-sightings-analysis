@@ -10,8 +10,8 @@
   "outputs": [
     {
       "path": "analysis-summary.md",
-      "sha256": "087ff06af86106314dc4974ceb879c2fdbc4cb09ab779d976d4bb78be1f91f4e",
-      "size_bytes": 2679
+      "sha256": "f363dcb9fd58be7872b4585668978343dc457be9b11a18e04cf461706afb55c8",
+      "size_bytes": 2854
     },
     {
       "path": "data-quality-report.json",
@@ -25,7 +25,7 @@
     },
     {
       "path": "figures/reports-by-month.svg",
-      "sha256": "ce5fa5afc5f626d3d218156c4c7b958ae7e94403d0221e70e004c6944b0daea8",
+      "sha256": "d6a58de49609c04cdd311aa9d637a03211658a4e97ad43bef3665721abc38b18",
       "size_bytes": 4749
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "path": "figures/reports-by-time-of-day.svg",
-      "sha256": "39d8e3ba010f1e07d0a20d0ca5239aa3a7c3e765dc2734a0bcf9199c4f2974ce",
-      "size_bytes": 2192
+      "sha256": "9ae781225512d740ff77ed2ba2c9454580005a723ee3b1a495204aba2b8ca08a",
+      "size_bytes": 2407
     },
     {
       "path": "figures/reports-by-year.svg",
-      "sha256": "b5ba8b16a4bfd5e4a76b6cdc6b5ea98ae36c2e9ec5d2ac1b68a4ecff0f235962",
+      "sha256": "4866c4e0e4a80bedf740c169786950e191e25cdc0aeaa6c185bdbfaac08194b5",
       "size_bytes": 2460
     },
     {
@@ -69,8 +69,8 @@
       "size_bytes": 892
     }
   ],
-  "project_version": "1.0.1",
-  "python_runtime": "3.13.5",
+  "project_version": "1.0.2",
+  "python_runtime": "3.13.18",
   "source_description": "Deterministic synthetic sighting reports",
   "synthetic_seed": 20241205,
   "warnings": 34
